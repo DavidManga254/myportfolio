@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>David Manga</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <nav id="navigation">
+            <div class="logo">
+                <div class="close">
+                    <div onclick="closeMenu('navigation')">
+                        <i class="fa fa-close"></i>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="logo-wrap">
+                        <img src="images/logo.png">
+                    </div>
+                    <p>Dave</p>
+                    <p><span>Web Developer</span></p>
+                </div>
+                
+            </div>
+            <div class="navigation">
+                
+                    <hr>
+                    <p><a href="#home">Home</a></p>
+                    <hr>
+                    <p><a href="#skills">My Skills</a></p>
+                    <hr>
+                    <p><a href="pages/work.html">Work</a></p>
+                    <hr>
+                    <p><a href="mailto:davemanga3@gmail.com" >Contact</a></p>
+                    <hr>
+                
+            </div>
+            <footer>
+                <a target="_blank" href="https://www.linkedin.com/in/david-manga-313419234/"><i class="fa fa-linkedin"></i></a>
+                <a target="-blank" href="https://github.com/DavidManga254"><i class="fa fa-github"></i></a>
+            </footer>
+        </nav>
+        <main>
+            <div>
+                <section class="menu">
+                    <div onclick="displayMenu('navigation')">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </section>
+
+                <section class="intro" id="home">
+                    <div class="intro-wrap">
+                        <p>
+                            Hi,<br>I'm  David,<br>Frontend Developer
+                        </p>
+                        <span>Web developer | Android Developer (React Native)</span><br>
+                        <p class="button"><a href="mailto:davemanga3@gmail.com">Contact me!</a> </p>
+
+                    </div>
+                    <p class="scroll"><i class="fa fa-arrow-down"></i></p>
+                </section>
+
+                <section class="portfolio">
+                    <h2>My Portfolio</h2>
+                    <p>A small list of recent projects that I've worked on. I've worked on them by employing different frontend technologies. It's only a afew of my projects in comparison with my entire list.<br>
+                        Interested to see some more? Visit <a href="pages/work.html"><span>my work</span></a>   page.
+                        
+                        </p>
+                    <div class="projects">
+                        <div class="project">
+                            <a target="_blank" href="https://davidmanga254.github.io/overworld/">
+                                <div class="view-hover">
+                                <p>View project</p>
+                            </div>
+                            </a>
+                            
+                            <img src="images/over.JPG">
+                            
+                        </div>
+                        <div class="project">
+                            <a target="_blank" href="https://davidmanga254.github.io/callofduty/">
+                                <div class="view-hover">
+                                <p>View project</p>
+                            </div>
+                            </a>
+                            <img src="images/call.JPG">
+                            
+                        </div>
+                        <div class="project">
+                            <a target="_blank" href="https://davidmanga254.github.io/gamesfullClone">
+                                <div class="view-hover">
+                                <p>View project</p>
+                            </div>
+                            </a>
+                            <img src="images/gamesfull.JPG">
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills" id="skills">
+                    <div class="skillintro">
+                        <h2>Me, Myself and I</h2>
+                        <section>
+                            <p>I have been Working with frontend technologies for over 2 years.<br><br>
+
+                                I have had opportunities to work with experienced individuals from who I picked exemplary skills.<br><br>
+                                
+                                I currently freelance but open for new opportunities.</p>
+                        </section>
+                    </div>
+                    <section class="skill-logo">
+                        <div class="skill-slide">
+                            <div><i class="devicon-javascript-plain colored"></i></div>
+                            <div><i class="devicon-react-original-wordmark colored"></i></div>
+                            <div><i class="devicon-mysql-plain-wordmark colored"></i></div>
+                            <div><i class="devicon-php-plain colored"></i></div>
+                            <div><i class="devicon-html5-plain colored"></i></div>
+                            <div><i class="devicon-css3-plain-wordmark colored"></i></div>
+                            <div><i class="devicon-javascript-plain colored"></i></div>
+                            <div><i class="devicon-react-original-wordmark colored"></i></div>
+                            <div><i class="devicon-mysql-plain-wordmark colored"></i></div>
+                            <div><i class="devicon-php-plain colored"></i></div>
+                            <div><i class="devicon-html5-plain colored"></i></div>
+                            <div><i class="devicon-css3-plain-wordmark colored"></i></div>
+                            <div><i class="devicon-javascript-plain colored"></i></div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            
+        </main>
+       <script src="js/index.js"></script>
+       <script src="https://jacekjeznach.com/wp-content/themes/new/js/vendor/osciliator.js" id="oscil"></script>
+       <script src="https://jacekjeznach.com/wp-content/themes/new/js/vendor/tagcanvas.js" id="tagcanvas"></script>
+    </body>
+</html>

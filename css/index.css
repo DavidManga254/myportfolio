@@ -1,0 +1,372 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(29,29,29);
+    color: white;
+    display: flex;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+   text-decoration: none; 
+}
+body::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: none;
+}
+main{
+    width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 1%;
+    scroll-behavior: smooth;
+}
+main::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(149,146,144);
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    flex-basis: 15%;
+    height: 100vh;
+    background-color: rgb(24,24,24);
+    position: relative;
+}
+.logo{
+    background-color: black;
+}
+
+.logo *{
+    margin-bottom: 1%;
+}
+.content-wrap div{
+    width: 60%;
+    margin: 0 auto;
+}
+.content-wrap{
+    margin-bottom: 30%;
+}
+.content-wrap p,span{
+    text-align: center;
+}
+.logo-wrap{
+    width: 15%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.close{
+    display: none;
+}
+.navigation{
+    margin-top: 10%;
+}
+nav footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+footer a{
+    margin: 5%;
+    color: rgb(149,146,144);
+    font-size: 1.5rem;
+}
+.logo{
+    padding-top: 5%;
+    background-color: black;
+    padding-bottom: 5%;
+    margin-bottom: 34%;
+}
+nav span{
+    color: rgb(149,146,144);
+    font-size: .9rem;
+}
+hr{
+    border-color:rgb(149,146,144,.2);
+}
+a:hover, i:hover{
+    cursor: pointer;
+    color: rgb(21,202,205);
+    transition: color .3s;
+}
+nav p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 12%;
+    margin-top: 12%;
+    text-align: center;
+    color: rgb(126, 123, 120);
+}
+.menu{
+    display: none;
+}
+section{
+    border-style: solid;
+    border-color: transparent;
+    border-width: thin;
+    width: 100%;
+}
+.intro-wrap{
+    padding-left: 2%;
+    padding-top: 15%;
+    font-size: 4.5rem;
+    font-weight: bold;
+    height: 80vh;
+
+}
+.intro-wrap span{
+    font-size: 1.5rem;
+    color: rgb(149,146,144) ;
+}
+.button{
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 .5rem  rgb(21,202,205),
+              0 0 .8rem  rgb(21,202,205),
+              0 0 1rem  rgb(21,202,205),
+              inset 0 0 1.3rem  rgb(21,202,205);
+    border: 0.2rem solid #fff;
+    padding:0.4rem;
+    border-radius: 5%;
+    width: fit-content;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    animation: flicker 3.5s infinite alternate;
+    
+
+}
+.button a{
+    color:rgb(21,202,205) ;;
+}
+@keyframes flicker{
+    0%, 18%, 22%, 25%, 53%, 57%, 100%{
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 .5rem  rgb(21,202,205),
+        0 0 .8rem  rgb(21,202,205),
+        0 0 1rem  rgb(21,202,205),
+        inset 0 0 1.3rem  rgb(21,202,205);
+    }
+    20%, 24%, 55% {       
+    box-shadow: none;
+  }
+}
+.intro{
+    position: relative;
+    height: 100vh;
+}
+.scroll{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 7%;
+    right: 3%;
+    border: solid;
+    padding: 1%;
+    border-radius: 20px;
+    overflow: hidden;
+    animation:bounce-top .9s both;
+}
+@keyframes bounce-top{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+
+
+
+.portfolio p{
+    padding-left: 5%;
+    width: 60%;
+}
+.portfolio span{
+    color:rgb(8,253,216) ;
+}
+h2{
+    color:rgb(8,253,216) ;
+    font-size: 3.5rem;
+    padding-left: 2%;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project{
+    margin-top: 5%;
+    width: calc(100%/3);
+    position: relative;
+}
+.project img{
+    width: 100%;
+    aspect-ratio: 16/14;
+}
+.view-hover{
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29,29,29,.2);
+    position: absolute;
+    display: none;
+}
+.view-hover p{
+    text-align:center;
+    font-size: .9rem;
+}
+.project:hover .view-hover{
+    display: block;
+    cursor: pointer;
+    color:rgb(8,253,216) ;
+}
+.projects{
+    margin-bottom: 5%;
+}
+
+.skills{
+    margin-bottom: 10%;
+}
+/*.skill-logo {
+  position: relative;
+  overflow: hidden;
+}
+.skill-slide {
+  background: url(slideshow.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow 10s linear infinite;
+}*/
+@keyframes slideshow {
+    100% { 
+        transform: translateX(-973%);  
+      }
+}
+
+.skill-logo{
+    overflow: hidden;
+    font-size:5rem;
+    width: 500px;
+    margin: 0 auto;
+}
+/*animation: slideshow 10s linear infinite;*/
+.skill-slide{
+    width: 100%;
+    display: flex;
+}
+.skill-slide div{
+    flex-basis: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: calc(100%/6);
+    animation: slideshow 10s linear infinite;
+}
+.skillintro{
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:900px){
+    body{
+        display: block;
+    }
+    nav{
+        flex-basis: 0%;
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        animation:swing .5s cubic-bezier(.175,.885,.32,1.275) both;
+        z-index: 100;
+    }
+    @keyframes swing{
+        0%{transform:rotateX(-100deg);transform-origin:top;opacity:0}100%{transform:rotateX(0deg);transform-origin:top;opacity:1}
+    }
+    .logo *{
+        margin-bottom: 1%;
+    }
+    .content-wrap div{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .content-wrap p,span{
+        text-align: center;
+    }
+    .skill-logo{
+        margin-top: 2%;
+        overflow: hidden;
+        font-size:5rem;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .logo-wrap{
+        width: 15%; 
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .close{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+    }
+    .navigation{
+        margin-top: 10%;
+    }
+    nav footer{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    footer i{
+        margin: 5%;
+        color: rgb(149,146,144);
+    }
+    .menu{
+        display: block;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 50;
+    }
+    main{
+        width: 95%;
+        margin: 0 auto;
+
+
+    }
+    .logo{
+    padding-top: 0%;
+    background-color: black;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    }
+    nav p{
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: rgb(149,146,144,);
+}
+    
+
+}
+
+.skillset{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.skillset i{
+    margin: 5%;
+}
