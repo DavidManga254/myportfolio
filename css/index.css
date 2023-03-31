@@ -39,6 +39,7 @@ nav{
     height: 100vh;
     background-color: rgb(24,24,24);
     position: relative;
+    display: block;
 }
 .logo{
     background-color: black;
@@ -338,6 +339,7 @@ h2{
         display: flex;
         justify-content: flex-end;
         z-index: 50;
+        font-size: 1.5rem;
     }
     main{
         width: 95%;
@@ -357,6 +359,14 @@ h2{
     margin-bottom: 3%;
     margin-top: 3%;
     color: rgb(149,146,144,);
+}
+.projects{
+    display: block;
+}
+.project{
+    margin-top: 5%;
+    width: calc(100%/1);
+    position: relative;
 }
     
 
